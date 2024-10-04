@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.travelmediagroup.com/wp-content/uploads/2022/06/bigstock-Stress-Level-Mood-Scale-Man-447658594-2880x1568.jpg);
+    background-size: cover;
+}
+
+nav {
+    background: rgba(215, 208, 208, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-bottom: 2px solid #0f0f0f;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar-brand{
+    color: black;
+}
+nav li {
+    float: left;
+}
+
+nav li.sentiment-link {
+    float: right;
+}
+.nav-link{
+    color: black;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+

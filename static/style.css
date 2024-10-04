@@ -1,0 +1,139 @@
+/* Add this CSS to your style.css or in your <style> tag */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+nav li.sentiment-link {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container.main-container,
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%; 
+    height: auto;
+}
+
+.container.main-container h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.container.main-container form,
+.result-container .sentiment-container {
+    text-align: left;
+}
+
+.container.main-container label {
+    display: block;
+    margin-bottom: 15px;
+    size: 100px;
+    color: black;
+}
+
+.container.main-container input[type="text"] {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #333;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.container.main-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container.main-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.result-text {
+    margin: 10px;
+    color: black;
+}
+
+.input-text {
+    font-weight: bold;
+    color: black;
+}
+
+.chart-container {
+    max-width: 30%; 
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-chart,
+.pie-chart {
+    width: 50px; 
+    box-sizing: border-box;
+}
+
+.main-result {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap; 
+}

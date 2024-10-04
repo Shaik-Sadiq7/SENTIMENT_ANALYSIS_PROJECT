@@ -1,0 +1,27 @@
+Certainly! The provided code is a simple Flask web application that performs sentiment analysis on text input. 
+
+1. **Flask Setup:**
+   - `from flask import Flask, render_template, request`: Imports the necessary Flask modules for creating a web application.
+   - `app = Flask(__name__)`: Initializes a Flask web application.
+
+2. **Data Loading and Cleaning:**
+   - Data is loaded from a CSV file (`twitter.csv`) using pandas.
+   - The NLTK library is used for natural language processing tasks.
+   - `clean` function is defined to clean and preprocess the text data in the "tweet" column of the loaded dataset. It removes URLs, HTML tags, punctuation, stopwords, and performs stemming.
+
+3. **Sentiment Analysis:**
+   - The Vader sentiment intensity analyzer from NLTK is used for sentiment analysis.
+   - Three new columns ('Positive', 'Negative', 'Neutral') are added to the dataset, containing sentiment scores for each tweet.
+
+4. **Flask Routes:**
+   - `/`: Renders the home page (`home.html`).
+   - `/sentiment`: Renders the sentiment analysis page (`sentiment.html`), initially displaying no results.
+   - `/analyze` (POST request): Takes user input from a form, applies the `clean` function to preprocess the text, calculates sentiment scores, and renders the sentiment analysis page with the results.
+
+5. **Sentiment Analysis Function:**
+   - `get_sentiment_score` function takes three sentiment scores (positive, negative, neutral) and returns a corresponding sentiment label ("Positive", "Negative", "Neutral") based on the highest score.
+
+6. **Run the Flask App:**
+   - `if __name__ == '__main__': app.run(debug=True)`: Executes the Flask application in debug mode when the script is run directly.
+
+In summary, the web application allows users to input text, performs sentiment analysis using the Vader sentiment intensity analyzer, and displays the results on the sentiment analysis page. The sentiment scores are also precomputed for tweets loaded from an external CSV file. The sentiment label is determined based on the highest sentiment score. The application uses Flask as the web framework and NLTK for text processing and sentiment analysis.
